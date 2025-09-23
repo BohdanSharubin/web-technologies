@@ -1,0 +1,16 @@
+body {
+    font-family: "Inter", sans-serif;
+    background-color: #f5ffdb;
+}
+
+#logo {
+    width: 30px;
+    height: auto;
+}
+
+#myPhoto {
+    width: 150px;
+    height: auto;
+    border-radius: 40%;
+    border: 2px solid #ccc;
+}
