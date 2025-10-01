@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up </title>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Sign Up</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@test.org" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="password_repeat">Repeat password:</label>
+        <input type="password" id="password_repeat" name="password_repeat" required><br><br>
+
+        <label for="birthdate">Birthdate:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120"><br><br>
+
+        
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="ai">Artificial intelligence</option>
+            <option value="other">Other</option>
+        </select><br><br>
+        
+        <label>Interests:</label>
+        <input type="checkbox" id="web" name="interests" value="WEB technologies">
+        <label for="web">Web technologies</label>
+        <input type="checkbox" id="databases" name="interests" value="Databases">
+        <label for="databases">Databases</label>
+        <input type="checkbox" id="machine_learning" name="interests" value="Machine learning">
+        <label for="machine_learning">Machine learning</label><br><br>
+        <input type="checkbox" id="web_design" name="interests" value="Web design">
+        <label for="web_design">Web design</label><br><br>
+        
+        <label for="range">How much do you enjoy coding? (1-10):</label>
+        <input type="range" id="range" name="satisfaction" min="1" max="10"><br><br>
+        
+        <label>Subscription:</label>
+        <input type="radio" id="free" name="subscription" value="free">
+        <label for="free">Free</label>
+        <input type="radio" id="donate" name="subscription" value="Buy me a coffee">
+        <label for="donate">Buy me a coffee</label><br><br>
+
+        <label for="facts">Some words about you:</label>
+        <textarea id="facts" name="facts" rows="3" cols="30"></textarea><br><br>
+
+        <input type="reset" value="Reset">
+        <input type="submit" value="Sign Up">
+    </form>
+    
+</body>
+</html>
