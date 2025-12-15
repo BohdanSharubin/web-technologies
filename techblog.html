@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="A personal blog about technology and my hobbies"
+    />
+    <meta name="keywords" content="blog, personal, technology, hobbies" />
+    <meta name="author" content="Bohdan Sharubin" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/techblog.css" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.svg" />
+    <title>Personal blog</title>
+  </head>
+  <body>
+    <header id="header">
+      <h1>My Personal Blog</h1>
+      <p>
+        Hi, I'm Bohdan, a student of the IN-33 group at Sumy State University.
+        I'm passionate about technology, especially Java programming, and I
+        enjoy exploring new trends in software development.
+      </p>
+      <nav id="navbar">
+        <img
+          id="logo"
+          src="assets/img/logo.png"
+          alt="logo of the blog"
+          fetchpriority="low"
+          loading="lazy"
+        />
+        <a href="index.html">About me</a>
+        <a class="blog" href="techblog.html">Tech blog</a>
+        <a class="contact" href="#">Contact me</a>
+        <a class="login" href="login_form.html">Login</a>
+        <a class="signup" href="signup_form.html">Sign up</a>
+      </nav>
+    </header>
+    <div class="toolbar" id="toolbar">
+    <button class="btn" id="btnAll" aria-pressed="true">Усі</button>
+    <span style="margin-left:auto"></span>
+    <input id="searchTitle" class="input" type="search" placeholder="Знайти за назвою…" aria-label="Пошук статті за назвою">
+    <button class="btn" id="searchBtn">Знайти</button>
+
+  </div>
+
+  <p class="counter" id="counter" aria-live="polite"></p>
+
+  <main>
+    <section id="blog-posts"></section>
+  </main>
+    <footer id="footer"><p>&copy; 2025 Bohdan Sharubin</p></footer>
+    <script type="module" src="scripts/techblog.js"></script>
+  </body>
+</html>
