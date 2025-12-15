@@ -1,20 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+ body, html {
+    height: 100%;
+}
+
 body {
-    font-family: "Roboto", sans-serif;
-    font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(1rem, 1.2vw + 0.5rem, 1.1rem);
+  background-color: #f5ffdb;
 }
 
 input[type=text], input[type=password] {
-    padding: 12px;
-    margin: 10px 0;
-    box-sizing: border-box;
-    border: 2px solid rgb(219, 171, 39);
-    border-radius: 8px;
+    padding: 0.6rem;
+    border: 0.125rem solid rgb(219, 171, 39);
+    border-radius: 0.5rem;
+    font-size: 1em;
     outline: none;
 }
 
-#username:focus, #password:focus {
+input:focus {
     background-color: rgb(220, 228, 150);
 }
 
@@ -23,11 +31,13 @@ input[type=text], input[type=password] {
 }
 
 input[type=submit] {
-    padding: 10px 30px;
-    margin: 4px 2px;
-    font-size: 16px;
-    border: 2px solid rgb(230, 170, 8);
-    border-radius: 8px;
+    padding: 0.6rem;
+    margin-top: 0.5rem;
+    font-size: 1em;
+    border: 0.125rem solid rgb(230, 170, 8);
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
 input[type=submit]:hover {
@@ -36,10 +46,27 @@ input[type=submit]:hover {
 }
 
 input[type=submit]:active {
-     box-shadow: 0 5px #666;
-    transform: translateY(4px);
+     box-shadow: 0 0.25rem #666;
+    transform: translateY(0.25rem);
 }
 
 label {
-    padding: 12px;
+    font-size: 0.95rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: min(90%, 22rem);
+  padding: 1.5rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.15);
+} 
+
+h2 {
+  text-align: center;
+  font-size: clamp(1.3rem, 2.5vw, 1.75rem);
+  margin-bottom: 0.5rem;
 }

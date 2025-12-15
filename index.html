@@ -37,12 +37,13 @@
       </nav>
     </header>
     <main id="main">
-      <h2>Welcome to my personal blog</h2>
       <article id="aboutMe">
         <h3>Some personal information</h3>
 
         <img
           id="myPhoto"
+          srcset="assets/img/me.jpg 400w, assets/img/me.jpg 800w, assets/img/me.jpg 1200w"
+          sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 800px"
           src="assets/img/me.jpg"
           alt="personal photo"
           fetchpriority="high"
