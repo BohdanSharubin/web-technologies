@@ -62,6 +62,7 @@ p {
 
 a {
     text-decoration: none;
+    white-space: nowrap;
 }
 
 #main {
