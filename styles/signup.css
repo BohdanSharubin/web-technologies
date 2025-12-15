@@ -235,3 +235,21 @@ textarea {
   min-height: 8rem;
   resize: vertical;
 }
+
+.error {
+  font-size: 0.85em;
+  color: #c0392b;
+  visibility: hidden;
+}
+
+.error.active {
+  visibility: visible;
+}
+
+input.invalid {
+  border-color: #c0392b;
+}
+
+input.valid {
+  border-color: green;
+}
