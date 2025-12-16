@@ -1,0 +1,30 @@
+{
+
+  "compilerOptions": {
+    "rootDir": "./src",
+    "allowJs": true,
+    "outDir": "./scripts/dist",
+    "skipDefaultLibCheck": true,
+
+    "module": "nodenext",
+    "target": "esnext",
+    "types": [],
+
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    "strict": true,
+    "jsx": "react-jsx",
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "scripts/dist"]
+}
