@@ -253,3 +253,9 @@ input.invalid {
 input.valid {
   border-color: green;
 }
+
+#radio_group {
+    display: flex;
+    flex-direction: row;
+    gap: 0.75rem;
+}

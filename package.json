@@ -1,0 +1,10 @@
+{
+  "scripts": {
+  "build": "tsc",               
+  "dev": "tsc --watch"          
+  },
+  "type": "module",
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
