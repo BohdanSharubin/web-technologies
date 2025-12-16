@@ -10,29 +10,22 @@
     <form id="signup_form" action="#" method="post">
         <h2>Sign Up</h2>
         <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Create your username" aria-describedby="username-error" required>
-        <div id="username-error" class="error" aria-live="polite" ></div> 
+        <input type="text" id="username" name="username" placeholder="Create your username" required>
 
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" placeholder="example@test.org" aria-describedby="email-error" required>
-        <div id="email-error" class="error" aria-live="polite" ></div> 
-
 
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" aria-describedby="password-error" required>
-        <div id="password-error" class="error" aria-live="polite" ></div> 
-
 
         <label for="password_repeat">Repeat password:</label>
         <input type="password" id="password_repeat" name="password_repeat" aria-describedby="password_repeat-error" required>
-        <div id="password_repeat-error" class="error" aria-live="polite" ></div> 
-
 
         <label for="birthdate">Birthdate:</label>
         <input class="input-base" type="date" id="birthdate" name="birthdate" >
 
         <label for="age">Age:</label>
-        <input class="input-base" type="number" id="age" name="age" min="0" max="120">
+        <input class="input-base" type="number" id="age" name="age" min="1" max="120">
 
         
         <label for="gender">Gender:</label>
@@ -43,7 +36,7 @@
             <option value="other">Other</option>
         </select>
         
-        <label>Interests:</label>
+        <label for="interests">Interests:</label>
         <input type="checkbox" id="web" name="interests" value="WEB technologies">
         <label class="checkbox-label" for="web">Web technologies</label>
         <input type="checkbox" id="databases" name="interests" value="Databases">
@@ -56,11 +49,14 @@
         <label for="range">How much do you enjoy coding? (1-10):</label>
         <input type="range" id="range" name="satisfaction" min="1" max="10">
         
-        <label>Subscription:</label>
-        <input type="radio" id="free" name="subscription" value="free">
-        <label for="free">Free</label>
-        <input type="radio" id="donate" name="subscription" value="Buy me a coffee">
-        <label for="donate">Buy me a coffee</label>
+        <div id="radio_group">
+
+            <label for="radio_group">Subscription:</label>
+            <input type="radio" id="free" name="subscription" value="free" checked>
+            <label for="free">Free</label>
+            <input type="radio" id="donate" name="subscription" value="Buy me a coffee">
+            <label for="donate">Buy me a coffee</label>
+        </div>
 
         <label for="facts">Some words about you:</label>
         <textarea id="facts" name="facts" rows="3" cols="30"></textarea>
@@ -68,6 +64,6 @@
         <input type="reset" value="Reset">
         <input type="submit" value="Sign Up">
     </form>
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/dist/index.js"></script>
 </body>
 </html>

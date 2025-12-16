@@ -6,8 +6,8 @@
     "outDir": "./scripts/dist",
     "skipDefaultLibCheck": true,
 
-    "module": "nodenext",
-    "target": "esnext",
+    "target": "es2020",
+    "module": "es2020",
     "types": [],
 
     "sourceMap": true,
@@ -19,7 +19,6 @@
 
     "strict": true,
     "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
