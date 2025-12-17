@@ -42,7 +42,11 @@
 
         <img
           id="myPhoto"
-          srcset="assets/img/me.jpg 400w, assets/img/me.jpg 800w, assets/img/me.jpg 1200w"
+          srcset="
+            assets/img/me.jpg  400w,
+            assets/img/me.jpg  800w,
+            assets/img/me.jpg 1200w
+          "
           sizes="(max-width: 600px) 100vw, (max-width: 1024px) 50vw, 800px"
           src="assets/img/me.jpg"
           alt="personal photo"
@@ -71,6 +75,41 @@
           but also fan fiction books.
         </p>
       </section>
+      
+      <section id="createPost">
+        <h3>Create a post</h3>
+
+        <form id="postForm" novalidate>
+          <div class="form-group">
+            <label for="postTitle">Заголовок поста</label>
+            <input
+              type="text"
+              id="postTitle"
+              name="title"
+              required
+              minlength="3"
+              placeholder="Введіть заголовок"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="postBody">Текст поста</label>
+            <textarea
+              id="postBody"
+              name="body"
+              rows="5"
+              required
+              placeholder="Напишіть текст поста"
+            ></textarea>
+          </div>
+
+          <div class="form-actions">
+            <button type="button" id="addBtn">Add post</button>
+
+            <button type="button" id="clearBtn">Clear all posts</button>
+          </div>
+        </form>
+      </section>
       <aside id="quotes">
         <h2>My favourite quotes</h2>
         <p><q>Do The Simplest Thing That Could Possibly Work</q> ― Kent Beck</p>
@@ -83,8 +122,22 @@
           Craftsmanship
         </p>
       </aside>
+      <section id="postsContainer">
+        <header>
+          <h3>My Posts</h3>
+
+          <div class="posts-controls">
+            <p class="posts-counter">
+              Posts count:
+              <span id="postsCount">0</span>
+            </p>
+          </div>
+        </header>
+        <div id="posts"></div>
+      </section>
+      
     </main>
     <footer id="footer"><p>&copy; 2025 Bohdan Sharubin</p></footer>
-    <script src="scripts/script.js"></script>
+    <script type="module" src="scripts/dist/main.js"></script>
   </body>
 </html>

@@ -22,6 +22,12 @@ export interface Error {
     id: string;
     error: string;
 }
+export interface Post {
+    id: number;
+    title: string;
+    body: string;
+    createdAt: Date;
+}
 export type subscriptionType = "free" | "paid";
 export type ValidationResult = "ok" | "error";
 export type AgeCategory = "child" | "adult" | "senior";

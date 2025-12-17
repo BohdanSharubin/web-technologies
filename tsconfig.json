@@ -9,7 +9,7 @@
     "target": "es2020",
     "module": "es2020",
     "types": [],
-
+    "lib": ["es2020", "DOM"],
     "sourceMap": true,
     "declaration": true,
     "declarationMap": true,
