@@ -122,7 +122,7 @@
           Craftsmanship
         </p>
       </aside>
-      <section id="postsContainer">
+      <section class="postsContainer">
         <header>
           <h3>My Posts</h3>
 
@@ -133,7 +133,27 @@
             </p>
           </div>
         </header>
-        <div id="posts"></div>
+        <div id="posts" class="container"></div>
+      </section>
+      <section class="postsContainer">
+        <header>
+          <h3>Recent Posts</h3>
+
+          <div class="posts-controls">
+            <button id="reloadPosts">Reload posts</button>
+            <div id="search-control">
+              
+              <input id="searchPostByTitle" class="input" type="search" placeholder="Find for title..." aria-label="Пошук статті за назвою">
+              <button class="btn" id="searchPostBtn">Find</button>
+              <button class="btn" id="restoreSearch" disabled>Restore</button>
+            </div>
+            <p class="posts-status">
+              Status:
+              <span id="postsStatus">No posts available</span>
+            </p>
+          </div>
+        </header>
+        <div id="recentPosts" class="container"></div>
       </section>
       
     </main>
