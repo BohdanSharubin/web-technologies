@@ -28,6 +28,23 @@ export interface Post {
     body: string;
     createdAt: Date;
 }
+export type postState = {
+    status: "idle";
+} | {
+    status: "loading";
+} | {
+    status: "success";
+    posts: Post[];
+} | {
+    status: "error";
+    message: string[];
+} | {
+    status: "noResults";
+    message: string;
+} | {
+    status: "filtered";
+    posts: Post[];
+};
 export type subscriptionType = "free" | "paid";
 export type ValidationResult = "ok" | "error";
 export type AgeCategory = "child" | "adult" | "senior";
