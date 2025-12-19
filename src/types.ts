@@ -33,6 +33,13 @@ export interface Post {
     createdAt: Date;
 }
 
+export type postState = | { status: "idle" } 
+    | { status: "loading" }
+    | { status: "success"; posts: Post[] }
+    | { status: "error"; message: string[] }
+    | { status: "noResults"; message: string }
+    | { status: "filtered"; posts: Post[] };
+
 export type subscriptionType = "free" | "paid";
 
 export type ValidationResult = "ok" | "error";
