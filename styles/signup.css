@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-label {
+label, legend {
       font-size: 0.9em;
 }
 
